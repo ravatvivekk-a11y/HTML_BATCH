@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- star CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .card{
+
+        border: solid 4px;
+        width: fit-content;
+        margin: 2rem auto;
+    }
+
+    .upper-part{
+        position: relative;
+        overflow: hidden;
+    }
+
+    .best-sellar{
+        background-color: #ff9457;
+        position: absolute;
+        top: 15px;
+        left: 0;
+        padding: 0.2rem 1.1rem;
+        font-size: 2rem;
+        color: white;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .offer{
+        background-color: #ff9457;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        position: absolute;
+        right: -12px;
+        top: -12px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: white;
+        padding-top: 20px;
+        padding-left: 15px;
+        line-height: 1em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .star-cont{
+        position: absolute;
+        left: 5px;
+        bottom: 35px;
+        font-size: 1.5rem;
+        color: #ff9457;
+    }
+    
+    .heart-cont{
+        background-color: white;
+        position: absolute;
+        bottom: 35px;
+        right: 10px;
+        padding: 0.5rem 0.5rem 0.2rem;
+        border-radius: 60%;
+        font-size: 1.3rem;
+    }
+    
+    .heart-icon:hover{
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: red;
+    }
+
+    .lower-part{
+        padding: 1em;
+    }
+
+    .mrp{
+        font-weight: 400;
+        color: grey;
+        text-decoration: line-through;
+        font-size: 0.9rem;
+    }
+        
+
+
+</style>
+<body>
+    
+    <div class="card">
+
+        <div class="upper-part">
+
+            <!-- Best seller -->
+            <div class="best-sellar">Best Seller</div>
+
+            <!-- offer -->
+            <div class="offer">50% off</div>
+
+            <!-- image -->
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpqNEWrgQPVnW8necReUu-gYSrk8wbiw8ZC2mdp7b_qw&s=10" alt="">
+
+            <!-- star -->
+
+            <div class="star-cont">
+
+                <i class="fa-solid fa-star star-icon"></i>
+                <i class="fa-solid fa-star star-icon"></i>
+                <i class="fa-solid fa-star star-icon"></i>
+                <i class="fa-solid fa-star star-icon"></i>
+                <i class="fa-solid fa-star-half   star-icon"></i>
+
+            </div>
+
+            <!-- Heart Icon -->
+            <div class="heart-cont">
+
+                <i class="fa-regular fa-heart heart-icon"></i>
+
+            </div>
+        </div>
+
+        <div class="lower-part">
+
+            <!-- name -->
+
+            <div class="product-name">
+                Fastrack Reflex Play+ Black: Intuitive Health & BT...
+            </div>
+
+            <div class="product-type">Unisex Watch</div>
+
+            <!-- price -->
+
+            <p class="pricing">₹ 4,995 <span class="mrp">₹9,995</span></p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

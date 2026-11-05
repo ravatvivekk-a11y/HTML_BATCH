@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <center><font size="6">International Space Agency - Orbital Mission Control Platform</font></center>
+
+     <table border="5" width="100%" cellpadding="5" bordercolor="gray" cellspacing="5" align="center">
+        <tr bgcolor="lightgray">
+            <th align="center" rowspan="5"><font size="4" >Space Agency (Agency)</font></th>
+             <th align="center" rowspan="5"><font size="4" >Rocket Variant (Vehicle)</font></th>
+              <th align="center" rowspan="5"><font size="4" >Payload ID</font></th>
+               <th align="center" colspan="7"><font size="4">Mission Telemetry & Orbital Status (Telemetry Matrix)</font></th>
+        </tr>
+        <tr>
+            <th align="center" colspan="5"><font size="4" >Trajectory Data</font></th>
+             <th align="center" rowspan="3" bgcolor="lightblue"><font size="4" >Live System Control (Form Inputs)</font></th>
+              <th align="center" rowspan="3" bgcolor="pink"><font size="4" >Nested Orbital Sub-System (Sub-Table Matrix)</font></th> 
+        </tr>
+        <tr>
+            <td align="center" colspan="4" bgcolor="lightblue"><font size="4" >Orbital Parameters</font></td>
+            <td align="center" rowspan="2" bgcolor="skyblue"><font size="4" >Velocity</font></td>
+           
+        </tr>
+        <tr>
+             <td align="center" colspan="2" bgcolor="lightblue"><font size="4" >Apogee (km)</font></td>
+              <td align="center" colspan="2" bgcolor="lightblue"><font size="4" >Perigee (km)</font></td>
+        </tr>
+        <tr>
+             <td align="center" colspan="2" bgcolor="mediumslateblue"><font size="4" >Max</font></td>
+              <td align="center" colspan="2" bgcolor="mediumslateblue"><font size="4" >Min</font></td>
+               <td align="center" bgcolor="mediumslateblue"><font size="4" >Km/s</font></td>
+                <td align="center" bgcolor="mediumslateblue"><font size="4" >Override Switch</font></td>
+                 <td align="center" bgcolor="mediumslateblue"><font size="4" >Module Status</font></td>
+        </tr>
+        <tr>
+             <td align="center" rowspan="5" bgcolor="lightskyblue"><font size="4" >NASA <hr size="2" color="sky blue"><font size="3" >Aetemis Program</font></td>
+              <td align="center" rowspan="3" bgcolor="azure"><font size="4"  >SLS Block 1</font></td>
+               <td align="center" ><font size="4" color="borwn">ORION-01</font></td>
+                <td align="right" colspan="2"><font size="4" >408,000</font></td>
+                 <td align="right" colspan="2"><font size="4" >360,000</font></td>
+                  <td align="right"><font size="4" >11.2</font></td>
+                   <td align="center" bgcolor="skyblue"><font size="4" ><label>Mission Mode:</label>
+                   <input type="text">  </font></td>
+                   <td  rowspan="5">
+                    <table border="1"  align="center" cellpadding="5" bordercolor="gray" cellspacing="5" >
+                        <tr>
+                            <td align="center" colspan="2" bgcolor="mediumpurple"><font size="4" >Orion Capsule Health</font></td>
+                        </tr>
+                        <tr>
+                            <td><font size="3">02 Reserve:</font></td>
+                            <td> <input type="range"></td>
+                        </tr>
+                        <tr>
+                            <td>shield Temp:</td>
+                            <td  bgcolor="lightcoral"><font size="3">2,760°C</font></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table border="1" cellpadding="5" bordercolor="gray" cellspacing="5" >
+                                    <tr>
+                                        <td  bgcolor="mediumpurple"><font size="4">Thruster</font></td>
+                                        <td  bgcolor="mediumpurple"><font size="4">Fuel</font></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RCS-01</td>
+                                        <td colspan="2"><font size="3">98%</font></td>
+                                    </tr>
+                                    <tr>
+                                        <td>RCS-02</td>
+                                        <td colspan="2"><font size="3">95%</font></td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                   </td>
+             </tr>
+          <tr>
+          <tr>
+            <td align="center"><font size="3" color="borwn">GATEWAY-M1</font></td>
+            <td colspan="2" align="right">70,000</td>
+            <td colspan="2" align="right">3,000</td>
+            <td align="right">1.68</td>
+             <td bgcolor="skyblue" align="center"><input type="radio">
+        <label>Auto-Align</label></td>
+          </tr>
+          <tr>
+            <td rowspan="2" bgcolor="azure" align="center"><font size="4">Falcon Heavy</font></td>
+            <td  align="center"><font size="4" color="borwn">PPE-HALO</font></td>
+            <td colspan="2" align="right">85,000</td>
+            <td colspan="2" align="right">4,500</td>
+            <td align="right">2.10</td>
+            <td bgcolor="skyblue" align="center"><input type="radio">
+        <label>Solar</label><input type="radio">
+        <label>Nuclear</label></td>
+          </tr> 
+          <tr>
+            <td align="center"><font size="4" color="borwn">VIPER-ROV</font></td>
+            <td colspan="2" align="right">384,000</td>
+            <td colspan="2" align="right">200</td>
+            <td align="right">1.02</td>
+            <td bgcolor="skyblue" align="center"><input type="button" value="Initiate Deploy"></td>
+          </tr>
+          <tr>
+            <td colspan="3" bgcolor="mediumpurple" align="center"><font size="4">US Orbital Sector Subtotal</font></td>
+            <td colspan="4" bgcolor="mediumpurple" align="center"><font size="4">Avg Apogee: 236, 750 km</font></td>
+            <td bgcolor="mediumpurple" align="center"><font size="4">Max V: 11.2 km/s</font></td>
+            <td colspan="2" bgcolor="mediumpurple" align="center"><font size="4">Sub-System Status: Operational (4/4)</font></td>
+          </tr>
+          <tr>
+            <td rowspan="3" bgcolor="antiquewhite" align="center"><font size="4">ISRO <hr size="2" color="orange"><font size="3">Deep Space</font></td>
+            <td rowspan="2" bgcolor="moccasin" align="center"><font size="4">LVM3-M4</font></td>
+            <td align="center"><font size="4" color="brown">CH3-LANDER</font></td>
+            <td colspan="2" align="right">153,00</td>
+            <td colspan="2" align="right">163</td>
+            <td align="right">10.8</td>
+            <td rowspan="3" bgcolor="lightyellow" style="color:brown;" align="center"> <label for="">Telemetry Logs:</label>
+        <textarea placeholder="Lander: ok  Rover: Parked"></textarea></td>
+        <td rowspan="3" bgcolor="moccasin" align="center">
+            <table border="1" >
+                <tr >
+                    <th bgcolor="yellow" colspan="2"><font size="4">Chandrayaan Module Audit</font></th>
+
+                </tr>
+                <tr>
+                    <td bgcolor="white"><font size="3" >Pragyan Rover:</font></td>
+                    <td bgcolor="lightgreen"><font size="3" color="green">Sleep Mode</font></td> 
+                </tr>
+                <tr>
+                    <td bgcolor="white"><font size="3">Payload Sensors:</font></td>
+                    <td bgcolor="lightgreen"><font size="3" color="green">Active</font></td>
+                </tr>
+            </table>
+        </td>
+          </tr>
+          <tr>
+            <td align="center"><font size="4" color="brown">PROP-MOD</font></td>
+            <td colspan="2" align="right">100,000</td>
+            <td colspan="2" align="right">150</td>
+            <td align="right">2.30</td>
+          </tr>
+          <tr>
+            <td bgcolor="moccasin" align="center"><font size="4">PSLV-C57</font></td>
+            <td align="center"><font size="4" color="brown">ADITYA-L1</font></td>
+            <td colspan="2">1,500,000</td>             
+            <td colspan="2">280,000</td>
+            <td>1.45</td>
+          </tr>
+          <tr>
+            <td colspan="3" bgcolor="lightgray"><font size="4">Global Orbital Aggregate (Grand Totals)</font></td>
+            <td colspan="2"  bgcolor="lightgray"><font size="4">1,500,000 km</font></td>
+            <td colspan="2"  bgcolor="lightgray"><font size="4">163 km</font></td>
+            <td  bgcolor="lightgray"><font size="4">Max:11.2 km/s</font></td>
+            <td  bgcolor="lightcoral"><font size="4">ALERT: NONE</font></td>
+            <td  bgcolor="lightgreen"><font size="4">SYSTEMS: 100% NOMINAL</font></td>
+          </tr>
+        </tr>
+     </table>
+</body>
+</html>
